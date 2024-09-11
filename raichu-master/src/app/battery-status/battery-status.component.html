@@ -1,0 +1,11 @@
+<h1>Battery Monitor</h1>
+<div class="battery-container">
+  <div *ngFor="let battery of batteryData" class="battery-status">
+    <i [class]="battery.icon"></i>
+    <div class="progress">
+      <div class="progress-bar" [class]="battery.color" role="progressbar" [style.width.%]="battery.percentage">
+        <span>{{ battery.percentage }}%</span>
+      </div>
+    </div>
+  </div>
+</div>

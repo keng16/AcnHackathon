@@ -1,0 +1,24 @@
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center chart boxes horizontally */
+  gap: 30px; /* Space between the chart boxes */
+}
+
+.chart-box {
+  background-color: transparent;
+  padding: 20px;
+  border: 2px solid white; /* White lining */
+  width: 1050px; /* Set width to 1000px for each chart box */
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Center the canvas inside the box */
+}
+
+canvas {
+  background-color: transparent;
+  color: #fff;
+  width: 100%; /* Ensures the canvas scales to fill the chart box */
+  margin: 20px;
+}

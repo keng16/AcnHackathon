@@ -1,0 +1,21 @@
+
+<div class="tab">
+  <button (click)="setActiveTab('Chart')" [class.active]="activeTab === 'Chart'">CHARTS</button>
+  <button (click)="setActiveTab('Logs')" [class.active]="activeTab === 'Logs'">LOGS</button>
+  <button (click)="setActiveTab('Predictions')" [class.active]="activeTab === 'Predictions'">PREDICTIONS</button>
+</div>
+
+<div *ngIf="activeTab === 'Chart'" class="tabcontent active">
+  <app-battery-status></app-battery-status>
+  <app-battery-charts></app-battery-charts>
+</div>
+
+<div *ngIf="activeTab === 'Logs'" class="tabcontent">
+  <h2>Logs</h2>
+  <pre>Loading logs...</pre>
+</div>
+
+<div *ngIf="activeTab === 'Predictions'" class="tabcontent">
+  <h2>Battery Depletion Predictions</h2>
+  <pre>Loading predictions...</pre>
+</div>

@@ -1,0 +1,41 @@
+.layout-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  app-side-navigator {
+    position: fixed; /* or absolute */
+    z-index: 2;
+  }
+  
+  .content-container {
+    margin-left: 120px; /* Adjust for sidenav width */
+    flex-grow: 1;
+  }
+  
+  .calendar-title {
+    color: white; /* White font color */
+    font-size: 30px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px;
+    margin-left: 40px;
+    letter-spacing: 4px;
+  }
+  
+  .calendar-container {
+    background-color: transparent; /* Transparent background */
+    color: rgb(255, 255, 255); /* White font color */
+    padding: 20px; /* Add padding if needed */
+    border-radius: 10px; /* Optional: rounded corners */
+    border: 1px solid white; /* Optional: white border */
+    width: 1100px; /* Set width to 500px */
+    margin-left: 50px; /* Margin on top, right, and bottom */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    z-index: 1; /* Ensure the calendar is below the sidenav */
+  }
+  
+  .fc-event {
+    color: rgb(0, 0, 0); /* Color for event text */
+  }
+  

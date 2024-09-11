@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400; /* Set the default font weight here, e.g., 400 for normal */
+  /* If you want to use a different weight, change the value accordingly */
+  background: linear-gradient(to top, 
+    #091d27, /* Dark */
+    #0d293a, /* Middle */
+    #1a4156, /* Light */
+    #286786  /* Super Light */
+  );
+  background-size: cover; /* Ensures the gradient covers the entire background */
+  background-repeat: no-repeat; /* Prevents background from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  height: 100vh; /* Ensures full viewport height */
+  margin: 0; /* Removes default margin */
+}

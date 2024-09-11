@@ -1,0 +1,11 @@
+.main-container {
+    display: flex;
+    height: 100vh; /* Make sure it fills the entire height */
+  }
+  
+  
+  .content {
+    flex-grow: 1;
+    margin-left: 70px; /* Adjust to match the width of the side nav */
+  }
+  

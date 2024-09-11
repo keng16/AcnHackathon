@@ -1,0 +1,39 @@
+<!-- Toggle button -->
+<button class="toggle-btn" (click)="toggleSidenav()">
+  <i class="fas fa-bars"></i>
+</button>
+
+<!-- Side Navigation -->
+<div class="sidenav" [class.closed]="isSidenavClosed">
+  <div class="logo">
+    <!-- <img src="path_to_logo.png" alt="Logo"> -->
+  </div>
+
+  <!-- Home and Settings buttons grouped together -->
+  <div class="menu-items">
+    <a routerLink="/Home">
+      <i class="fas fa-home"></i>
+      <span class="menu-text">Home</span>
+    </a>
+    <a routerLink="/Calendar">
+      <i class="fas fa-calendar"></i>
+      <span class="menu-text">Schedule</span>
+    </a>
+    <!-- <a routerLink="/profile">
+      <i class="fas fa-user"></i>
+      <span class="menu-text">Profile</span>
+    </a>
+    <a routerLink="/settings">
+      <i class="fas fa-cog"></i>
+      <span class="menu-text">Settings</span>
+    </a> -->
+  </div>
+
+  <!-- Logout button at the bottom -->
+  <div class="menu-items bottom">
+    <a routerLink="/Login">
+      <i class="fas fa-sign-out-alt"></i>
+      <span class="menu-text">Logout</span>
+    </a>
+  </div>
+</div>
